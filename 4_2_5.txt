@@ -1,0 +1,37 @@
+b)echo "1: Hello, world!" > my_file.txt
+
+c)git add my_file.txt
+git commit -m "commit 01"
+
+d)echo "2: Hello, world!" >> my_file.txt
+git add my_file.txt
+git commit -m "commit 02"
+
+echo "3: Hello, world!" >> my_file.txt
+git add my_file.txt
+git commit -m "commit 03"
+
+echo "4: Hello, world!" >> my_file.txt
+git add my_file.txt
+git commit -m "commit 04"
+
+echo "5: Hello, world!" >> my_file.txt
+git add my_file.txt
+git commit -m "commit 05"
+
+e)first_commit_hash=$(git rev-list --reverse HEAD | head -n 1)
+git reset --soft $first_commit_hash
+
+f)git status
+git log
+
+g)git add my_file.txt
+
+h)git commit --amend -m "commit 01"
+
+i)git log
+
+//git push origin main
+//git add 4_2_5.txt
+//git commit -m "added command file"
+//git push origin main
